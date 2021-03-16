@@ -10,6 +10,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Квитанция");
+            Class1 P = new Class1();
+            P.SetInfo();
+            P.GetInfo();
+            Console.ReadKey();
         }
     }
 }
