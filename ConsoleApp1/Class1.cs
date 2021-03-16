@@ -8,14 +8,55 @@ namespace ConsoleApp1
 {
     class Class1
     {
-        public int Number { get; set; }
-        public string Date { get; set; }
-        public decimal Symma { get; set; }
+        private int Number;
+        private string Date;
+        private decimal Symma;
+
+
+        public Class1(int Number, string Date, decimal Symma)
+        {
+            this.Number = Number;
+            this.Date = Date;
+            this.Symma = Symma;
+        }
         public Class1()
         {
             Number = 1;
             Date = null;
             Symma = 0;
+        }
+        public int number
+        {
+            get
+            {
+                return Number;
+            }
+            set
+            {
+                this.Number = number;
+            }
+        }
+        public string date
+        {
+            get
+            {
+                return Date;
+            }
+            set
+            {
+                this.Date = date;
+            }
+        }
+        public decimal symma
+        {
+            get
+            {
+                return Symma;
+            }
+            set
+            {
+                this.Symma = symma;
+            }
         }
         public void GetInfo()
         {
